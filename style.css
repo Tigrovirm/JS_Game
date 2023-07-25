@@ -1,0 +1,61 @@
+body{
+    position: relative;
+    width: 540px;
+    height: 800px;
+}
+#game{
+    position: relative;
+    width: 540px;
+    height: 800px;
+    border: 1px solid black;
+    background-image: url(image/cosmos.jpg);
+    z-index: 1;
+    text-align: center;
+    display: table-cell;
+}
+#player{
+    position: relative;
+    width: 40px;
+    height: 60px;
+    background-image: url(image/spaceship.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.obstacle{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url(image/asteroid.png);
+}
+.obstacle-bg {
+    background-image: url(image/asteroid.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+.bullet{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.0); /* Прозрачность 50% */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 540px;
+    height: 900px;
+    z-index: 1;
+}
+#restartButton {
+    visibility: hidden;
+    z-index: 0;
+}
+.dark_overlay {
+    background-color: black;
+}
+#timer{
+    margin-top: 30px;
+}
